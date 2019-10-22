@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="email.css">
+</head>
+<body>
+
+<h2>Results</h2>
+<p>Your top results are: Service and Gifts</p>
+<p>Open the form at the bottom to let your friends really get to know you!</p>
+
+<button class="open-button" onclick="openForm()">Email</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/email" class="form-container" method='POST'>
+    <h1>Tell your friends!</h1>
+
+    <label for="email1"><b>Email</b></label>
+    <input type="email" placeholder="Email..." name="email1">
+
+    <label for="email2"><b>Email</b></label>
+    <input type="email" placeholder="Email..." name="email2">
+
+    <label for="email3"><b>Email</b></label>
+    <input type="email" placeholder="Email..." name="email3">
+
+    <label for="email4"><b>Email</b></label>
+    <input type="email" placeholder="Email..." name="email4">
+
+    <label for="email5"><b>Email</b></label>
+    <input type="email" placeholder="Email..." name="email5">
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+  </form>
+</div>
+
+<script src="email.js"></script>
+
+</body>
+</html>
