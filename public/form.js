@@ -69,7 +69,6 @@
   
       // finally combine our output list into one string of HTML and put it on the page
       quizContainer.innerHTML = output.join("");
-      heartContainer.innerHTML = `<img src="img/heart_bar1.svg" alt="one-heart">`
     }
   
     function showResults() {
@@ -99,8 +98,10 @@
       
       if (currentSlide === 0) {
         previousButton.style.display = "none";
+        heartContainer.innerHTML = `<img src="img/heart_bar0.svg" alt="one-heart">`
       } else {
         previousButton.style.display = "inline-block";
+        heartContainer.innerHTML = `<img src="img/heart_bar${n}.svg" alt="one-heart">`
       }
       
       if (currentSlide === slides.length - 1) {

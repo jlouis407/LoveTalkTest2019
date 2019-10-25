@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-
+const mongo = require('mongodb').MongoClient;
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true })); 
 const nodemailer = require('nodemailer');
+const url = "mongodb://localhost:27017/";
 
 app.use(express.static("public"))
-
 
 app.get('/', function (req, res) {
     res.sendFile('/index.html');
@@ -118,7 +118,43 @@ app.post('/email', function (req, res) {
     emails.push(req.body.email3)
     emails.push(req.body.email4)
     emails.push(req.body.email5)
-   
+    
+    var objEmail = {
+        email1: req.body.email1,
+        email2: req.body.email2,
+        email3: req.body.email3,
+        email4: req.body.email4,
+        email5: req.body.email5,
+    };
+    // objEmail.email1 = req.body.email1;
+    // objEmail.email2 = req.body.email2;
+    // objEmail.email3 = req.body.email3;
+    // objEmail.email4 = req.body.email4;
+    // objEmail.email5 = req.body.email5;
+
+    // objEmailArr.push(objEmail);
+
+    console.log(objEmail)
+    // Database insert
+    mongo.connect(url, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+      }, (err, client) => {
+      if (err) {
+        console.error(err)
+        return
+      }
+      const db = client.db('lovetalktest')
+      const collection = db.collection("emails")
+
+      collection.insertOne(objEmail, function(err, res){
+        if (err) throw err;
+        console.log("Number of documents inserted: " + res.insertedCount);
+        client.close();
+    })
+    })
+    
+    
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -148,3 +184,6 @@ app.post ('/form', function(req, res) {
 app.listen(3000, ()=> {
     console.log('Server Running on Port 3000')
 })
+
+
+

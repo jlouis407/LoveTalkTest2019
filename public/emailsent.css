@@ -1,0 +1,56 @@
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+button{
+    font-family: 'Work Sans', sans-serif;
+      font-size: 14px;
+      background-color: #F52C79;
+      color: #fff;
+      border: 0px;
+      border-radius: 6px;
+      padding: 10px;
+      cursor: pointer;
+      margin-bottom: 20px;
+  }
+  button:hover{
+      background-color: #FC79AA;
+  }
+
+  .heading-container {
+      padding-top: 4%;
+  }
+
+  .button-container {
+      padding-top: 4%;
+  }
+
+
+
+  /* Footer CSS */
+
+  .pink {
+    background-color: #F52C79!important;
+  }
+  .footer-text {
+    color: white;
+    margin-top: 0px;
+  }
+  #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+ .heart-icon-container {
+    text-align: center;
+    padding-bottom: 20px;
+  }

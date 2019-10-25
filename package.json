@@ -12,6 +12,7 @@
   "dependencies": {
     "ejs": "^2.7.1",
     "jquery": "^3.4.1",
+    "mongodb": "^3.3.3",
     "nodemailer": "^6.3.1"
   }
 }

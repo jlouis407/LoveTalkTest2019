@@ -24,6 +24,12 @@ h1{
   overflow: hidden;
 }
 
+.button-div {
+  padding-top: 30px;
+  position: relative;
+  z-index: 5;
+}
+
 .question{
   font-size: 30px;
   margin-bottom: 10px;
@@ -66,11 +72,13 @@ button:hover{
 .active-slide{
   opacity: 1;
   z-index: 2;
+  position: relative;
 }
 .quiz-container{
   position: relative;
-  height: 140px;
+  height: 200px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* new code starts here */
@@ -150,7 +158,7 @@ button:hover{
   margin-top: 0px;
 }
 
-#footerLeft { 
+/* #footerLeft { 
   width: 47%; 
   float: left; 
   display: block; 
@@ -171,7 +179,7 @@ button:hover{
   bottom: 0;
   width: 100%;
   height: 10%;
-}
+} */
 .pink {
   background-color: #F52C79!important;
 }
