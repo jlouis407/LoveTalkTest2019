@@ -1,20 +1,225 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="email.css">
+ <meta charset="UTF-8">
+ <link rel="stylesheet" 
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+       crossorigin="anonymous">
+
+ <title>Love Talk Results</title>
+ <style> 
+
+  body {
+       background-color: pink;
+       color: #F52C79;
+  }
+
+  header {
+       font: Florence, cursive;
+       font-size: x-large;
+       font-style: italic;
+       font-weight: bold;        
+  }
+
+  b {
+       font-family: Florence, cursive;
+       font-style: italic;
+       color: red;
+       text-shadow: 5px 2px 4px grey;
+    }
+
+  p {
+       font-size: large;
+    }
+
+  .submit {
+       position: relative;
+       left: 50px;
+       top: 10px;
+}
+
+  .message {
+       position: relative;
+       right: 65px;
+    }
+
+   .firstheader {
+       position: relative;
+       top:  200px;
+       left: 250px;
+       font-size: larger;
+    }
+
+    .first-subheader {
+       position: relative;
+       top: 200px;
+       left: 150px;
+    }
+
+    .secondheader {
+       position: relative;
+       top: 131px;
+       left: 833px;
+       font-size: larger;
+    }
+
+    .second-subheader {
+       position: relative;
+       top: 140px;
+       left: 800px;
+    }
+
+    .thirdheader {
+       position: relative;
+       left: 550px;
+       bottom: 175px;
+     }
+
+     div.first-buy-now-column {
+       position: relative;
+       top: 100px;
+       left: 450px;
+    }
+
+   
+   div.second-buy-now-column {
+       position: relative;
+       bottom: 1400px;
+       left: 1025px;
+    }
+
+    .gift-pics {
+        position: relative;
+        left: 275px;
+        bottom: 650px;
+     }
+
+     .gift-pics2 {
+        position: relative;
+        left: 850px;
+        bottom: 2140px;
+     }
+
+
+    .form-popup {
+       position: relative;
+       bottom: 2050px;
+       left: 0px;
+       display: none;
+     }
+
+    .tellyourfriends {
+       position: relative;
+       bottom: 55px;
+       left: 475px;
+       font-family: Florence, cursive;
+       font-style: italic;
+       color: red;
+       text-shadow: 5px 2px 4px grey;
+     }
+
+    .open-button {
+        background-color: #555;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: relative;
+        bottom: 2125px;
+        /* right: 28px; */
+        left: 495px;
+        width: 280px;
+     }
+
+     /* Set a style for the submit/login button */
+    .form-container .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+     .form-container .cancel {
+       background-color: red;
+    }
+
+/* Add some hover effects to buttons */
+     .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+
+     label {
+        position: relative;
+        left: 100px;
+     }
+
+     input {
+        position: relative;
+        left: 100px;
+     }
+
+ </style>
 </head>
+
 <body>
 
-<h2>Results</h2>
-<p>Your top results are: touch and gifts</p>
-<p>Open the form at the bottom to let your friends really get to know you!</p>
+ <header>
+  <h1 class="firstheader">Physical Touch</h1>
+   <h6 class="first-subheader">You like to receive hugs, kisses, and high-fives.</h2>
+
+  <h1 class="secondheader">Acts of Service</h1>
+   <h6 class="second-subheader">You like it when others do nice things<br> for you 
+   such as helping with chores,<br> helping with school projects, or driving you places.
+
+  <h1 class="thirdheader"> <img src="Logo.svg" class="logo-pic" height="250px" width="250px" alt=""></h1>
+ </header>
+
+<div class="first-buy-now-column">
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a>
+</div>
+
+<div class="gift-pics">
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br>
+</div>
+
+<div class="second-buy-now-column">
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a><br><br><br><br><br>
+ <a href="#" class="btn btn-success">Buy Now</a>
+</div> 
+
+<div class="gift-pics2">
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br><br>
+ <img src="blankspace.png" height="150px" width="150px" alt=""><br>
+</div>
 
 <button class="open-button" onclick="openForm()">Email</button>
 
 <div class="form-popup" id="myForm">
   <form action="/email" class="form-container" method='POST'>
-    <h1>Tell your friends!</h1>
+    <h1 class="tellyourfriends">Tell your friends!</h1>
 
     <label for="email1"><b>Email</b></label>
     <input type="email" placeholder="Email..." name="email1">
@@ -25,10 +230,10 @@
     <label for="email3"><b>Email</b></label>
     <input type="email" placeholder="Email..." name="email3">
 
-    <label for="email4"><b>Email</b></label>
+    <label for="email3"><b>Email</b></label>
     <input type="email" placeholder="Email..." name="email4">
 
-    <label for="email5"><b>Email</b></label>
+    <label for="email3"><b>Email</b></label>
     <input type="email" placeholder="Email..." name="email5">
 
     <button type="submit" class="btn">Send</button>
@@ -39,4 +244,5 @@
 <script src="email.js"></script>
 
 </body>
+
 </html>
