@@ -32,6 +32,12 @@ button{
       padding-top: 4%;
   }
 
+  #page-container {
+    position: relative;
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+  }
+
 
 
   /* Footer CSS */
@@ -44,7 +50,6 @@ button{
     margin-top: 0px;
   }
   #footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
